@@ -7,6 +7,18 @@ const cardMarco = document.getElementById('cardMarco');
 const endpoint = 'https://lanciweb.github.io/demo/api/pictures/';
 
 // Usiamo axios cosi da semplificare il codice il più possibile
+const overlayElement = document.getElementById('overlay');
+console.log(overlayElement);
+const btn1 = document.getElementById('btn');
+console.log(btn1);
+
+
+
+    btn1.addEventListener('click', function () {  
+        overlayElement.classList.remove('d-block');
+        overlayElement.classList.add('d-none');
+    }); 
+
 axios.get(endpoint)
     .then(response => {
         // Test fiducia passato
@@ -39,3 +51,4 @@ axios.get(endpoint)
     .catch( error => {
         console.error('Error, Bocciat');
     });
+    
