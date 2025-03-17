@@ -6,7 +6,6 @@ const cardMarco = document.getElementById('cardMarco');
 // Andiamo a semplificare il codice salvando l'API in una variabile
 const endpoint = 'https://lanciweb.github.io/demo/api/pictures/';
 
-
 // Usiamo axios cosi da semplificare il codice il più possibile
 axios.get(endpoint)
     .then(response => {
