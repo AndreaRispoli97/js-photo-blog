@@ -6,19 +6,14 @@ const cardMarco = document.getElementById('cardMarco');
 // Andiamo a semplificare il codice salvando l'API in una variabile
 const endpoint = 'https://lanciweb.github.io/demo/api/pictures/';
 
-// Usiamo axios cosi da semplificare il codice il più possibile
+
 const overlayElement = document.getElementById('overlay');
 console.log(overlayElement);
 const btn1 = document.getElementById('btn');
 console.log(btn1);
+const imgChange = document.getElementById('img-Change');
 
-
-
-    btn1.addEventListener('click', function () {  
-        overlayElement.classList.remove('d-block');
-        overlayElement.classList.add('d-none');
-    }); 
-
+// Usiamo axios cosi da semplificare il codice il più possibile
 axios.get(endpoint)
     .then(response => {
         // Test fiducia passato
@@ -45,6 +40,35 @@ axios.get(endpoint)
         //Andiamo ad inserire le card(elementCard) nell'HTML
         //Precisamente nel contenitore che ha come id cardMarco
         cardMarco.innerHTML = elementCard;
+
+        const card = document.querySelectorAll('.card');
+
+        console.log(card);
+
+        for (let i = 0; i < card.length; i++) {
+          console.log('sono nel ciclo');  
+        
+          card[i].addEventListener('click', function(){
+                console.log(`ho cliccato sulla scheda ${i}`); 
+                const schedaCurrent = card[i].querySelector('.card-img-top');
+                imgChange.src = schedaCurrent.src
+                overlayElement.classList.add('d-block');
+            overlayElement.classList.remove('d-none');
+            });
+
+        };
+        
+        
+
+        
+        // btn1.innerHTML = elementProva;
+
+
+
+        btn1.addEventListener('click', function () {  
+            overlayElement.classList.remove('d-block');
+            overlayElement.classList.add('d-none');
+        });
 
 
     })
