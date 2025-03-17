@@ -28,12 +28,12 @@ body{
     position: absolute;
     left: 25%;
     top: 25%;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  button{
-    display: flex;
-  }
+
 /* Header */
 
 header{
