@@ -1,18 +1,19 @@
 /* RESET */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 /* BODY */
-body{
-        background-image: url(/img/cork.png);
-        
+body {
+    background-image: url(/img/cork.png);
+
 }
 
-.help{
+.help {
     width: 100%;
-    
+
 }
 
 #overlay {
@@ -22,36 +23,43 @@ body{
     top: 0;
     left: 0;
     z-index: 2;
-    display:none;
+    display: none;
     align-content: center;
     justify-items: anchor-center;
-  }
+}
 
-  .overlay-element{
+.overlay-element {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
 
 
 /* Header */
 
-header{
+header {
     background-image: url(/img/wall.png);
     height: 150px;
-    width: 100%; 
-    font-family:"Edu Tas Beginner", sans-serif;
+    width: 100%;
+    font-family: "Edu Tas Beginner", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-header,strong{
+header,
+strong {
     font-size: 75px;
 }
 
 /* Main */
 
-main{
+main {
     font-family: "Sometype Mono", "monospace";
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: rotate(20deg) scale(1.2);
+    z-index: 1;
 }
