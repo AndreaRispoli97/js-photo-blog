@@ -27,87 +27,94 @@
 
 <body>
 <!-- Qui andiamo a creare l'header con delle personalizzazioni tramite il nostro CSS main -->
-    <header>
-        <h1><strong>ESTATE '24</strong></h1>
-    </header>
-<!-- Creazione del Main a cui collegheremo il font tramite il nostro CSS -->
-    <main>
-<!-- Creazione del contenitore che conterrà la row -->
-        <div class="container text-center">
-            <!-- Creazione della row che conterrà tutte le schedecard che creeremo da js -->
-            <div class="row align-items-start mt-5 mb-3" id="cardMarco">
-                <!-- Nel commenti qui al di sotto possiamo vedere la creazione delle card in html -->
-                <!-- <div class="col mb-4 col-md-6 col-lg-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="p-3"><img src="img/cork.png" class="card-img-top" alt="..."></div>
-                        <img class="translate-middle start-50" src="img/pin.svg" style="position:absolute;" alt="pin">
-                        <div class="card-body">
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
+    <div class="vw-100" id="overlay">
+        <div class="container overlay-element">
+            <button>AAA</button>
+            <img src="/img/fotoprova.jpg" alt="azz" class="help">
+        </div>
+    </div>
+        <header>
+            <h1><strong>ESTATE '24</strong></h1>
+        </header>
+    <!-- Creazione del Main a cui collegheremo il font tramite il nostro CSS -->
+        <main>
+    <!-- Creazione del contenitore che conterrà la row -->
+            <div class="container text-center">
+                <!-- Creazione della row che conterrà tutte le schedecard che creeremo da js -->
+                <div class="row align-items-start mt-5 mb-3" id="cardMarco">
+                    <!-- Nel commenti qui al di sotto possiamo vedere la creazione delle card in html -->
+                    <!-- <div class="col mb-4 col-md-6 col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <div class="p-3"><img src="img/cork.png" class="card-img-top" alt="..."></div>
+                            <img class="translate-middle start-50" src="img/pin.svg" style="position:absolute;" alt="pin">
+                            <div class="card-body">
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col mb-4 col-md-6 col-lg-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="p-3"><img src="img/cork.png" class="card-img-top" alt="..."></div>
-                        <img class="translate-middle start-50" src="img/pin.svg" style="position:absolute;" alt="pin">
-                        <div class="card-body">
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
+                    <div class="col mb-4 col-md-6 col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <div class="p-3"><img src="img/cork.png" class="card-img-top" alt="..."></div>
+                            <img class="translate-middle start-50" src="img/pin.svg" style="position:absolute;" alt="pin">
+                            <div class="card-body">
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col mb-4 col-md-6 col-lg-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="p-3"><img src="img/cork.png" class="card-img-top" alt="..."></div>
-                        <img class="translate-middle start-50" src="img/pin.svg" style="position:absolute;" alt="pin">
-                        <div class="card-body">
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
+                    <div class="col mb-4 col-md-6 col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <div class="p-3"><img src="img/cork.png" class="card-img-top" alt="..."></div>
+                            <img class="translate-middle start-50" src="img/pin.svg" style="position:absolute;" alt="pin">
+                            <div class="card-body">
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col mb-4 col-md-6 col-lg-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="p-3"><img src="img/cork.png" class="card-img-top" alt="..."></div>
-                        <img class="translate-middle start-50" src="img/pin.svg" style="position:absolute;" alt="pin">
-                        <div class="card-body">
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
+                    <div class="col mb-4 col-md-6 col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <div class="p-3"><img src="img/cork.png" class="card-img-top" alt="..."></div>
+                            <img class="translate-middle start-50" src="img/pin.svg" style="position:absolute;" alt="pin">
+                            <div class="card-body">
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col mb-4 col-md-6 col-lg-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="p-3"><img src="img/cork.png" class="card-img-top" alt="..."></div>
-                        <img class="translate-middle start-50" src="img/pin.svg" style="position:absolute;" alt="pin">
-                        <div class="card-body">
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
+                    <div class="col mb-4 col-md-6 col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <div class="p-3"><img src="img/cork.png" class="card-img-top" alt="..."></div>
+                            <img class="translate-middle start-50" src="img/pin.svg" style="position:absolute;" alt="pin">
+                            <div class="card-body">
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col mb-4 col-md-6 col-lg-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="p-3"><img src="img/cork.png" class="card-img-top" alt="..."></div>
-                        <img class="translate-middle start-50" src="img/pin.svg" style="position:absolute;" alt="pin">
-                        <div class="card-body">
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
+                    <div class="col mb-4 col-md-6 col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <div class="p-3"><img src="img/cork.png" class="card-img-top" alt="..."></div>
+                            <img class="translate-middle start-50" src="img/pin.svg" style="position:absolute;" alt="pin">
+                            <div class="card-body">
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </div> -->
-            </div>
-
-    </main>
+                    </div> -->
+                
+    
+        </main>
+    </div>
     <!-- script di axion -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- script main -->
     <script src="/js/main.js"></script>
     <!-- script di bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
 </body>
 
 </html>
