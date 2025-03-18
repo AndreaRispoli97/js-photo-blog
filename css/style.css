@@ -60,6 +60,10 @@ main {
     font-family: "Sometype Mono", "monospace";
 }
 
+.card{
+    transition: all 0.5s;
+}
+
 .card:hover {
     cursor: pointer;
     transform: rotate(20deg) scale(1.2);
